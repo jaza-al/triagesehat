@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TriageSehat
 
-## Getting Started
+Aplikasi web skrining awal gejala kesehatan berbasis Next.js dan Gemini API untuk membantu pengguna memahami tingkat urgensi awal sebelum berkonsultasi dengan tenaga medis.
 
-First, run the development server:
+> **Disclaimer:** TriageSehat berfungsi sebagai alat bantu informasi/skrining awal dan **bukan** pengganti diagnosis, pemeriksaan fisik, maupun saran medis profesional. Dalam kondisi darurat, segera hubungi layanan gawat darurat setempat atau kunjungi fasilitas kesehatan terdekat.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tautan Proyek
+- **Live Demo (Vercel):** https://triagesehat.vercel.app
+- **Repository GitHub:** https://github.com/jaza-al/triagesehat
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fitur Utama
+- **Formulir Skrining Gejala:** Input gejala, durasi/tingkat keparahan, serta catatan tambahan untuk analisis awal.
+- **Contoh Kasus Cepat:** Pilihan skenario kasus cepat untuk mempermudah pengujian dan demonstrasi alur skrining.
+- **Analisis Gemini API & Aturan Darurat:** Mengolah data gejala melalui endpoint `/api/analyze` dengan penanganan *fallback* dan deteksi tanda bahaya/darurat.
+- **Riwayat Lokal:** Menyimpan riwayat hasil skrining di browser (`localStorage`) agar mudah ditinjau kembali oleh pengguna.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Menjalankan Proyek Secara Lokal
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone repository**
+   ```bash
+   git clone [https://github.com/jaza-al/triagesehat.git](https://github.com/jaza-al/triagesehat.git)
+   cd triagesehat
